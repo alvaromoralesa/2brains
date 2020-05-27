@@ -20,6 +20,8 @@ import { SignUpComponent } from './components/sign-up/sign-up.component';
 //Api
 import { HttpClientModule} from '@angular/common/http';
 import { UserService } from '../app/shared/services/user.service';
+//Flexbox Layout
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,8 @@ import { UserService } from '../app/shared/services/user.service';
     AngularFireAuthModule,
     AngularFireStorageModule,
     AngularFireModule.initializeApp(environment.firebaseConfig, 'brains'),
-    HttpClientModule
+    HttpClientModule,
+    FlexLayoutModule
   ],
   providers: [
     AuthService,
