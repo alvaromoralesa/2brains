@@ -12,7 +12,7 @@ Desplegado en GCP
 Extras, uso de npm y composer, bootstrap
 
 Live Demo https://brains-9f3b1.web.app/
-
+usuario: demo@demo.cl  Password: demo123
 ## Development server
 
 Ejecutar `ng serve` para abrir el servidor de desarrollo local. La aplicación queda servida en `http://localhost:4200/`. Incluye Hotreload.
