@@ -1,13 +1,11 @@
  <!-- Resources -->
- <h2>Login</h2>
-
- <div class="displayTable">
+<div class="displayTable"  fxLayout fxLayoutAlign="center" fxLayoutGap="10px">
     <div class="displayTableCell">
   
       <div class="authBlock">
-        <h3>Sign In</h3>
+        <h3>Login</h3>
         <div class="formGroup">
-          <input type="text" class="formControl" placeholder="Username" #userName required>
+          <input type="text" class="formControl" placeholder="Usuario" #userName required>
         </div>
   
         <div class="formGroup">
@@ -16,28 +14,24 @@
   
         <!-- Calling SignIn Api from AuthService -->
         <div class="formGroup">
-          <input type="button" class="btn btnPrimary" value="Log in" (click)="authService.SignIn(userName.value, userPassword.value)">
+    <div class="displayTableCell">
+      <input type="button" class="btn btn-primary" value="Login en Firebase" (click)="authService.SignIn(userName.value, userPassword.value)">
         </div>
-  
-        <div class="formGroup">
-          <span class="or"><span class="orInner">O</span></span>
-        </div>
-  
         <!-- Calling GoogleAuth Api from AuthService -->
         <div class="formGroup">
-          <button type="button" class="btn googleBtn" (click)="authService.GoogleAuth()">
+          <button type="button" class="btn btn-primary" (click)="authService.GoogleAuth()">
             <i class="fab fa-google-plus-g"></i>
             Login con Google
           </button>
         </div>
   
-        <div class="forgotPassword">
-          <span routerLink="/forgot-password">¿Olvidó su contraseña?</span>
+        <div class="forgotPassword ">
+          <p routerLink="/forgot-password">¿Olvidó su contraseña?</p>
         </div>
       </div>
   
       <div class="redirectToLogin">
-        <span>No tiene una cuenta?<span class="redirect" routerLink="/register-user"> Registrese</span></span>
+        <p class="redirect" routerLink="/register-user"> Registrese aquí</p>
       </div>
   
     </div>

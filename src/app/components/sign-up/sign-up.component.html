@@ -1,11 +1,11 @@
-<div class="displayTable">
+<div class="displayTable" fxLayout fxLayoutAlign="center" fxLayoutGap="10px">
     <div class="displayTableCell">
   
       <div class="authBlock">
-        <h3>Sign Up</h3>
+        <h3>Registro</h3>
   
         <div class="formGroup">
-          <input type="email" class="formControl" placeholder="Email Address" #userEmail required>
+          <input type="email" class="formControl" placeholder="Correo Electrónico" #userEmail required>
         </div>
   
         <div class="formGroup">
@@ -13,23 +13,19 @@
         </div>
   
         <div class="formGroup">
-          <input type="button" class="btn btnPrimary" value="Sign Up" (click)="authService.SignUp(userEmail.value, userPwd.value)">
+          <input type="button" class="btn btn-primary" value="Registro con Firebase" (click)="authService.SignUp(userEmail.value, userPwd.value)">
         </div>
-  
-        <div class="formGroup">
-          <span class="or"><span class="orInner">Or</span></span>
-        </div>
-  
+
         <!-- Continue with Google -->
         <div class="formGroup">
-          <button type="button" class="btn googleBtn" (click)="authService.GoogleAuth()">
+          <button type="button" class="btn btn-primary" (click)="authService.GoogleAuth()">
             <i class="fab fa-google-plus-g"></i>
                 Continuar con Google
           </button>
         </div>
    
       <div class="redirectToLogin">
-        <span>Ya tienes una cuenta? <span class="redirect" routerLink="/sign-in">Log In</span></span>
+        <span>Ya tienes una cuenta? <span class="redirect" routerLink="/sign-in">LogIn</span></span>
       </div>
     </div>
   
