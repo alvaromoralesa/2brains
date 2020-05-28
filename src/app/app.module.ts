@@ -22,7 +22,6 @@ import { HttpClientModule} from '@angular/common/http';
 import { UserService } from '../app/shared/services/user.service';
 //Flexbox Layout
 import { FlexLayoutModule } from '@angular/flex-layout';
-//import { CardComponent } from './components/dashboard/card/card.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +31,6 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     ForgotPasswordComponent,
     VerifyEmailComponent,
     SignUpComponent,
-    //CardComponent
   ],
   imports: [
     BrowserModule,
