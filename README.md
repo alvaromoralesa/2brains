@@ -18,7 +18,7 @@ usuario: demo@demo.cl  Password: demo123
 Prerequisitos.
 NPM
 
-Ejecutar `ng serve` y `npm install` para cargar librerias y abrir el servidor de desarrollo local. La aplicación queda servida en `http://localhost:4200/`. Incluye Hotreload.
+Ejecutar  `npm install`y `ng serve` para cargar librerias y abrir el servidor de desarrollo local. La aplicación queda servida en `http://localhost:4200/`. Incluye Hotreload.
 
 ## Compilación para deploy
 
